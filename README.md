@@ -1,50 +1,65 @@
-// JS EXERCISE – CRUD WITH OBJECTS + IF CONDITION + LOOP + FUNCTIONS
-// -----------------------------------------------------------
-// You must write code that interacts with the HTML buttons using onclick attributes.
-// Each item will be an OBJECT with a name and a Age.
-// -----------------------------------------------------------
+# JS Exercise – CRUD with Objects
 
-// STEP 1: Create an empty array to store objects
-var items = [];
+## Overview
 
-// STEP 2: Write your functions
+This is a beginner-friendly JavaScript exercise for practicing:
 
-// addItem(): Ask the user for name and Age (prompt). If not empty → add an object to the array.
-function addItem() {
-    // TODO: Ask for name using prompt()
-    // TODO: Ask for Age using prompt()
-    // TODO: Check with IF that both name and Age are not empty
-    // TODO: Create an object: var item = {name: ..., Age: ...}
-    // TODO: Push it to items array
-    // TODO: Alert success message
-}
+* Objects
+* Arrays
+* Loops
+* Conditionals (`if`)
+* Functions
+* Basic DOM interaction (or prompts)
 
-// showItems(): Loop through the array and show all objects
-function showItems() {
-    // TODO: If array is empty, alert "No items yet"
-    // TODO: Loop using for (var i = 0; i < items.length; i++)
-    // TODO: Show name and Age for each object
-}
+The exercise uses **objects with `name` and `Age` properties** and teaches CRUD operations: **Create, Read, Update, Delete**.
 
-// editItem(index): Fill inputs or prompts with selected object data
-function editItem(index) {
-    // TODO: Get object at index
-    // TODO: Fill name and Age in prompts or input fields
-    // TODO: Set editingIndex = index
-    // TODO: Change add button text to "Update"
-}
+---
 
-// deleteItem(): Ask the user for index to delete. If valid → remove it.
-function deleteItem() {
-    // TODO: Use prompt() to ask for index
-    // TODO: Check with IF index >= 0 && index < items.length
-    // TODO: Use items.splice(index, 1)
-    // TODO: Alert deleted
-}
+## Instructions
 
-// -----------------------------------------------------------
-// That’s it! Fill in the TODOs to complete the object-based exercise.
-// -----------------------------------------------------------
+### STEP 1: Create an array
 
+* Create an empty array called `items` to store student objects.
 
+### STEP 2: Implement the functions
 
+#### `addItem()`
+
+* Ask the user for `name` and `Age` (using `prompt()` or input fields).
+* Validate that both fields are not empty.
+* Create an object: `{name: ..., Age: ...}`.
+* Add the object to the `items` array.
+* Alert a success message.
+* If editing, update the existing object instead of adding a new one.
+
+#### `showItems()`
+
+* Loop through the `items` array and display each object.
+* If the array is empty, alert `"No items yet"`.
+* You can display the data in the console, using alerts, or in a table on the HTML page.
+
+#### `editItem(index)`
+
+* Fill the prompts or input fields with the selected object's data.
+* Set a variable `editingIndex` to track which object is being edited.
+* Change the add button text to "Update".
+
+#### `deleteItem()`
+
+* Ask the user for the index of the object to delete.
+* Validate that the index is correct.
+* Remove the object from the `items` array using `splice()`.
+* Alert that the object has been deleted.
+
+---
+
+## Notes
+
+* Use `if` statements for validation.
+* Use `for` loops to iterate over the array.
+* The exercise can be implemented using prompts/alerts or by manipulating HTML elements.
+* Make sure the Add/Update functionality works correctly with the `editingIndex` variable.
+
+---
+
+This exercise is designed for **beginners** to practice object manipulation and CRUD logic in JavaScript.
