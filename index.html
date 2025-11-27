@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS CRUD Exercise</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+ <div class="container">
+    <h1>Student Manager</h1>
+
+    <!-- Input fields -->
+    <input type="text" id="nameInput" placeholder="Enter Name" />
+    <input type="text" id="valueInput" placeholder="Age" />
+    <button class="btn" onclick="addItem()">Add Student</button>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Rows will appear here -->
+        </tbody>
+    </table>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
